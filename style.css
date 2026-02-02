@@ -1,16 +1,20 @@
+/* RESET */
 * {
   box-sizing: border-box;
-  font-family: "Arial", sans-serif;
+  font-family: Arial, sans-serif;
 }
 
+/* VERROUILLAGE TOTAL DE L’ÉCRAN */
 html,
 body {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   margin: 0;
-  overflow: hidden; /* 🚫 empêche le scroll */
+  padding: 0;
+  overflow: hidden; /* ❌ aucune barre de défilement */
 }
 
+/* CENTRAGE DE LA PAGE */
 body {
   background: linear-gradient(135deg, #ffdde1, #ee9ca7);
   display: flex;
@@ -18,37 +22,40 @@ body {
   align-items: center;
 }
 
+/* CARTE CENTRALE */
 .wrapper {
-  background: white;
+  width: 360px;
   padding: 30px 40px;
+  background: #ffffff;
   border-radius: 20px;
   text-align: center;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-  width: 360px;
 }
 
+/* TEXTE */
 .question {
   font-size: 22px;
   margin-bottom: 20px;
   color: #ff4d6d;
 }
 
+/* GIF */
 .gif {
   width: 220px;
   margin-bottom: 20px;
   border-radius: 15px;
 }
 
+/* ZONE DES BOUTONS (LIMITÉE + SANS DÉBORDEMENT) */
 .btn-group {
   position: relative;
   width: 260px;
-  height: 120px; /* zone FIXE */
+  height: 120px;
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  overflow: hidden; /* 🔑 empêche toute sortie */
 }
 
+/* BOUTONS */
 button {
   padding: 10px 22px;
   font-size: 16px;
@@ -57,14 +64,16 @@ button {
   cursor: pointer;
 }
 
+/* YES */
 .yes-btn {
   background-color: #ff4d6d;
   color: white;
-  margin-right: 10px;
+  position: relative;
 }
 
+/* NO (FUGITIF 😈) */
 .no-btn {
-  background-color: #ccc;
-  color: #333;
+  background-color: #cccccc;
+  color: #333333;
   position: absolute;
 }

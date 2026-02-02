@@ -1,79 +1,52 @@
-/* RESET */
-* {
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
 
-/* VERROUILLAGE TOTAL DE L’ÉCRAN */
-html,
 body {
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  overflow: hidden; /* ❌ aucune barre de défilement */
-}
-
-/* CENTRAGE DE LA PAGE */
-body {
-  background: linear-gradient(135deg, #ffdde1, #ee9ca7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* CARTE CENTRALE */
-.wrapper {
-  width: 360px;
-  padding: 30px 40px;
-  background: #ffffff;
-  border-radius: 20px;
-  text-align: center;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-}
-
-/* TEXTE */
-.question {
-  font-size: 22px;
-  margin-bottom: 20px;
-  color: #ff4d6d;
-}
-
-/* GIF */
-.gif {
-  width: 220px;
-  margin-bottom: 20px;
-  border-radius: 15px;
-}
-
-/* ZONE DES BOUTONS (LIMITÉE + SANS DÉBORDEMENT) */
-.btn-group {
-  position: relative;
-  width: 260px;
-  height: 120px;
-  margin: 0 auto;
-  overflow: hidden; /* 🔑 empêche toute sortie */
-}
-
-/* BOUTONS */
-button {
-  padding: 10px 22px;
-  font-size: 16px;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-}
-
-/* YES */
-.yes-btn {
-  background-color: #ff4d6d;
-  color: white;
-  position: relative;
-}
-
-/* NO (FUGITIF 😈) */
-.no-btn {
-  background-color: #cccccc;
-  color: #333333;
-  position: absolute;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f9e3e3;
+    font-family: 'Arial', sans-serif;
+    flex-direction: column;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    color: #d32f2f;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  .yes-button {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .no-button {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .gif_container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+  }

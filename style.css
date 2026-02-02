@@ -49,5 +49,15 @@ button {
   transition: all 0.2s ease;
 }
 
+.btn-group {
+  position: relative;
+  width: 250px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .yes-btn {
   background-co

@@ -16,3 +16,4 @@ noBtn.addEventListener("mouseenter", () => {
 yesBtn.addEventListener("click", () => {
   document.querySelector(".question").innerText = "Yaaay 💖 I knew it!";
 });
+
